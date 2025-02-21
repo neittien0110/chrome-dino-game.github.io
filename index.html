@@ -2048,7 +2048,7 @@
                 SCORE: "offline-sound-reached"
             },
             Runner.keycodes = {
-                JUMP: {                 //Todo: press one of these keys to jump
+                JUMP: {                 //Todo: Bấm phím bất kì trong các phím sau đề nhảy
                     38: 1,
                     32: 1,              //space
                     39: 1,              //right arrow
@@ -2058,7 +2058,7 @@
                     40: 1
                 },
                 RESTART: {
-                    13: 1
+                    13: 1               // Enter/CR
                 }
             },
             Runner.events = {
@@ -3783,7 +3783,8 @@
                 <div class="icon icon-offline" jstcache="0" style="visibility:hidden"></div>
                 <div id="main-message" jstcache="0">
                     <h1 jstcache="0">
-                        <span jsselect="heading" jsvalues=".innerHTML:msg" jstcache="9">Bấm phím space để bắt đầu</span>
+                        <span jsselect="heading" jsvalues=".innerHTML:msg" jstcache="9">Bấm phím space, hoặc right, hoặc pageup để nhảy</span>
+                        <div>(Code: khai báo trong mảng Runner.keycodes[])</div>
                         <a id="error-information-button" class="hidden" onclick="toggleErrorInformationPopup()" jstcache="0"></a>
                     </h1>
                     <p jsselect="summary" jsvalues=".innerHTML:msg" jstcache="1" style="display:none"></p>
